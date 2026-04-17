@@ -1,0 +1,47 @@
+SELECT email FROM employees;
+
+SELECT id, CONCAT(first_name, "  ", last_name) AS Dane FROM employees;
+
+SELECT id AS employee_id, email AS private_email FROM employees;
+
+SELECT DISTINCT first_name AS Imiona FROM employees;
+
+SELECT * FROM employees WHERE first_name = "Tom";
+
+SELECT DISTINCT first_name AS Number_Of_Employees FROM employees;
+
+SELECT * FROM employees WHERE hire_date >= "2019-01-01" ORDER BY hire_date ASC;
+
+SELECT * FROM jobs WHERE min_salary < 5000 ORDER BY max_salary ASC;
+
+SELECT * FROM employees WHERE first_name = "Adam" AND last_name = "Irwin";
+
+SELECT * FROM employees WHERE first_name = "Tom" OR last_name = "John";
+
+SELECT * FROM employees WHERE  first_name = "Martinez" AND birth_date > "1994-01-01";
+
+SELECT * FROM employees WHERE department_id != 3;
+
+SELECT * FROM employees WHERE department_id = 6 AND job_id IN(2,4) ORDER BY birth_date ASC;
+
+SELECT * FROM employees WHERE department_id = 3 and job_id !=2
+
+SELECT* FROM jobs ORDER BY min_salary DESC
+
+SELECT * FROM jobs ORDER BY min_salary DESC, max_salary DESC
+
+SELECT * FROM jobs WHERE min_salary = 3000 ORDER BY max_salary
+
+SELECT * FROM locations WHERE street_address IS NULL
+
+SELECT * FROM employees ORDER BY first_name LIMIT 3
+
+SELECT * FROM employees WHERE id > 10
+
+SELECT MAX(birth_date) AS oldest_employee FROM employees
+
+SELECT MIN(birth_date) AS youngsters_department_2 FROM employees WHERE department_id = 2
+
+SELECT CONCAT(first_name, " ", last_name) AS PersonLastJoined FROM employees ORDER BY hire_date DESC LIMIT 1
+
+SELECT COUNT(job_id) AS AmountOfSoftwareEngineers_Total FROM employees WHERE job_id = 2

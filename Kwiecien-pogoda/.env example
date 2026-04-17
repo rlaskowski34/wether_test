@@ -1,0 +1,9 @@
+API_KEY=abaf891f881f0013ba7df3fa450461b0
+API_CITY=Lisbon
+EXCEL_PATH=weather_data.xlsx
+
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=Titanum97@
+DB_NAME=weather_app
