@@ -1,4 +1,4 @@
-# from April_forecast.openweather import *
+# from Kwiecien-pogoda.openweather import *
 # import time
 #
 #
